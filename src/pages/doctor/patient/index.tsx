@@ -121,7 +121,7 @@ export default function Patient() {
           </aside>
         </div>
       </header>
-      <ScrollArea scrollHideDelay={200} className="h-[73vh] w-full">
+      <ScrollArea scrollHideDelay={200} className="h-[72vh] w-full">
         <section className="flex flex-wrap gap-6">
           {editedPatients?.map((patient) => (
             <PatientCard
