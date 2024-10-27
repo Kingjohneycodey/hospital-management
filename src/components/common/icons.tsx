@@ -8,7 +8,7 @@ type AppSVGProps = {
   onClick?: () => void;
 };
 export const AppDeleteIcon = forwardRef<SVGElement, AppSVGProps>(
-  (props, _ref) => {
+  (props) => {
     return (
       <svg
         width="34"
@@ -32,7 +32,7 @@ export const AppDeleteIcon = forwardRef<SVGElement, AppSVGProps>(
 );
 
 export const AppEditIcon = forwardRef<SVGElement, AppSVGProps>(
-  (props, _ref) => {
+  (props) => {
     return (
       <svg
         width="34"
@@ -54,7 +54,7 @@ export const AppEditIcon = forwardRef<SVGElement, AppSVGProps>(
   }
 );
 export const AppDownloadIcon = forwardRef<SVGElement, AppSVGProps>(
-  (props, _ref) => {
+  (props) => {
     return (
       <svg
         width="39"
@@ -86,7 +86,7 @@ export const AppDownloadIcon = forwardRef<SVGElement, AppSVGProps>(
   }
 );
 export const AppEyeOpenIcon = forwardRef<SVGElement, AppSVGProps>(
-  (props, _ref) => {
+  (props) => {
     return (
       <svg
         width="39"
