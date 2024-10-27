@@ -4,7 +4,7 @@ import { generateId } from "@/utils/helpers";
 import { cn } from "@/lib/utils";
 
 interface ElementType {
-  id: string | number;
+  id: string ;
   name: string;
   element: JSX.Element;
 }
@@ -22,9 +22,9 @@ export function TabRouter({ config, tabClassName, variant }: TabRouterProps) {
     throw new Error("TabRouter: config is not properly configured");
   return (
     <>
-      <Tabs defaultValue={config[0].id as any} className={tabClassName}>
+      <Tabs defaultValue={config[0].id satisfies string } className={tabClassName}>
         <TabsList variant={variant} className={cn()}>
-          {config?.map((key, _) => (
+          {config?.map((key) => (
             <TabsTrigger
               variant={variant}
               key={generateId()}
